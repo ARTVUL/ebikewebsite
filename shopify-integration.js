@@ -66,7 +66,7 @@
                             button: {
                                 'background-color': '#2563eb !important',
                                 ':hover': {
-                                    'background-color': '#1d4ed8 !important'
+                                    'background-color': '##1d4ed8 !important'
                                 }
                             }
                         }
