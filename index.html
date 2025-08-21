@@ -18,10 +18,10 @@
             <span class="lightning">⚡</span>
         </a>
         <nav>
-            <button id="homeNavBtn" class="nav-btn active">Home</button>
-            <button id="kitsNavBtn" class="nav-btn">Kits</button>
-            <button id="partsNavBtn" class="nav-btn">Parts</button>
-            <button id="servicesNavBtn" class="nav-btn">Services</button>
+            <button type="button" id="homeNavBtn" class="nav-btn active">Home</button>
+            <button type="button" id="kitsNavBtn" class="nav-btn">Kits</button>
+            <button type="button" id="partsNavBtn" class="nav-btn">Parts</button>
+            <button type="button" id="servicesNavBtn" class="nav-btn">Services</button>
         </nav>
     </div>
 </header>
@@ -90,7 +90,7 @@
                  data-has-shopify="true"
                  data-shopify-id="product-component-1755095138217">
                 <div class="kit-image">
-                    <img src="https://www.eco-ebike.com/wp-content/uploads/2020/04/BBSHD-Kit-1.jpg" alt="E-Bike Conversion Kit" />
+                    <img src="https://www.eco-ebike.com/wp-content/uploads/2020/04/BBSHD-Kit-1.jpg" alt="1500W Power Conversion Kit" loading="lazy" />
                     <div class="kit-badge">Most Popular</div>
                     <div class="view-details-overlay">
                         <span>View Details</span>
@@ -133,7 +133,7 @@
                  data-has-shopify="true"
                  data-shopify-id="product-component-1755383100544">
                 <div class="product-image">
-                    <img src="https://www.eco-ebike.com/wp-content/uploads/2020/04/48V-18Ah-Battery.jpg" alt="48V 18Ah Battery" />
+                    <img src="https://www.eco-ebike.com/wp-content/uploads/2020/04/48V-18Ah-Battery.jpg" alt="48V 18Ah Battery" loading="lazy" />
                     <div class="product-badge">Best Seller</div>
                     <div class="view-details-overlay">
                         <span>View Details</span>
@@ -160,7 +160,7 @@
                  data-description="The Bafang BBSHD 1500W mid-drive motor is the ultimate choice for high-performance e-bike conversions. With its integrated torque sensor and impressive power output, this motor delivers smooth, natural-feeling assistance that responds to your pedaling effort. Perfect for off-road adventures, hill climbing, or heavy cargo hauling."
                  data-has-shopify="false">
                 <div class="product-image">
-                    <img src="https://www.eco-ebike.com/wp-content/uploads/2020/04/BBSHD-Motor-1.jpg" alt="1500W Mid-Drive Motor" />
+                    <img src="https://www.eco-ebike.com/wp-content/uploads/2020/04/BBSHD-Motor-1.jpg" alt="1500W Mid-Drive Motor" loading="lazy" />
                     <div class="product-badge">High Power</div>
                     <div class="view-details-overlay">
                         <span>View Details</span>
@@ -187,7 +187,7 @@
                  data-description="This 750W geared rear hub motor offers the perfect balance of power and efficiency for urban commuting and recreational riding. The internal gear reduction provides excellent torque for hill climbing while maintaining quiet operation. Easy to install and maintain, making it ideal for first-time e-bike builders."
                  data-has-shopify="false">
                 <div class="product-image">
-                    <img src="https://www.eco-ebike.com/wp-content/uploads/2020/04/750W-Rear-Motor.jpg" alt="750W Rear Hub Motor" />
+                    <img src="https://www.eco-ebike.com/wp-content/uploads/2020/04/750W-Rear-Motor.jpg" alt="750W Rear Hub Motor" loading="lazy" />
                     <div class="view-details-overlay">
                         <span>View Details</span>
                     </div>
@@ -203,7 +203,7 @@
                 </div>
             </div>
 
-            <!-- LCD Display -->
+            <!-- SW900 LCD Display -->
             <div class="product-card clickable-product" data-category="displays"
                  data-product-id="display-sw900"
                  data-title="SW900 LCD Display"
@@ -211,9 +211,10 @@
                  data-price="£25"
                  data-image="https://i.imgur.com/58X6fLw.png"
                  data-description="The SW900 LCD display provides essential information at a glance, including speed, battery level, assist level, and trip data. Features a clear, easy-to-read display with multiple riding modes and settings. Weather-resistant construction ensures reliable operation in all conditions. Compatible with most e-bike systems using 5-pin connections."
-                 data-has-shopify="false">
+                 data-has-shopify="true"
+                 data-shopify-id="product-component-1755798710229">
                 <div class="product-image">
-                    <img src="https://i.imgur.com/58X6fLw.png" alt="SW900 LCD Display" />
+                    <img src="https://i.imgur.com/58X6fLw.png" alt="SW900 LCD Display" loading="lazy" />
                     <div class="view-details-overlay">
                         <span>View Details</span>
                     </div>
@@ -224,7 +225,7 @@
                     <p class="product-description">Basic 5 pin display with clear visibility and multiple settings.</p>
                     <div class="product-footer">
                         <div class="product-price">£25</div>
-                        <button class="btn btn-primary">Add to Cart</button>
+                        <div id='product-component-1755798710229'></div>
                     </div>
                 </div>
             </div>
@@ -262,12 +263,12 @@
 </main>
 
 <!-- Product Detail Modal -->
-<div class="modal-overlay" id="productModal">
+<div class="modal-overlay" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="product-modal">
         <button class="modal-close" id="modalClose">×</button>
         <div class="modal-content">
             <div class="modal-image">
-                <img id="modalImage" src="" alt="Product Image" />
+                <img id="modalImage" src="" alt="Selected product image" />
             </div>
             <div class="modal-info">
                 <div class="modal-category" id="modalCategory"></div>
@@ -294,6 +295,5 @@
 
 <script src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script>
 <script src="shopify-integration.js"></script>
-<script src="script.js"></script>
-</body>
+<script src="script.js" defer></script>
 </html>
