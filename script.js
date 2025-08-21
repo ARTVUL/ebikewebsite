@@ -23,7 +23,7 @@ const productSpecs = {
         { label: 'Power', value: '1500W' },
         { label: 'Torque', value: '160Nm' },
         { label: 'Speed', value: '45+ km/h' },
-        { label: 'Voltage', value: '48V-52V' },
+        { label: 'Voltage', value: '48-52V' },
         { label: 'Sensor', value: 'Torque + Speed' },
         { label: 'Threading', value: 'BSA 68/70mm' }
     ],
@@ -32,7 +32,7 @@ const productSpecs = {
         { label: 'Torque', value: '80Nm' },
         { label: 'Speed', value: '32 km/h' },
         { label: 'Voltage', value: '48V' },
-        { label: 'Wheel Size', value: '26"/27.5"/29"' },
+        { label: 'Wheel Size', value: '26\"/27.5\"/29"' },
         { label: 'Cassette', value: '8/9/10 Speed' }
     ],
     'display-sw900': [
@@ -227,7 +227,7 @@ document.getElementById('shopKitsBtn').addEventListener('click', () => {
     document.getElementById('kitsNavBtn').click();
 });
 
-document.getElementById('shopPartsBtn').addEventListener('click', () {
+document.getElementById('shopPartsBtn').addEventListener('click', () => {
     document.getElementById('partsNavBtn').click();
 });
 
