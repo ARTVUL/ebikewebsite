@@ -99,6 +99,8 @@ function openProductModal(productData) {
                         productId = '15076670931319'; // 1500W Kit
                     } else if (productData.shopifyId === 'product-component-1755383100544') {
                         productId = '15091393921399'; // 48V Battery
+                    } else if (productData.shopifyId === 'product-component-1755798710229') {
+                        productId = '15100297118071'; // SW900 LCD Display
                     }
                     
                     if (productId) {
@@ -124,27 +126,41 @@ function openProductModal(productData) {
                                             }
                                         },
                                         button: {
-                                            'font-family': "'Inter', sans-serif",
-                                            'font-weight': '600',
-                                            'background-color': '#2563eb !important',
-                                            ':hover': {
-                                                'background-color': '#1d4ed8 !important'
-                                            },
-                                            'border-radius': '1rem !important',
-                                            'padding': '1rem 2rem !important'
+                                            'font-weight': 'bold',
+                                            ':hover': { 'background-color': '#2056d1' },
+                                            'background-color': '#2460e8',
+                                            ':focus': { 'background-color': '#2056d1' },
+                                            'border-radius': '40px'
                                         }
                                     }
                                 },
-                                cart: {
-                                    popup: false,
+                                modalProduct: {
+                                    contents: { img: false, imgWithCarousel: true, button: false, buttonWithQuantity: true },
                                     styles: {
+                                        product: {
+                                            '@media (min-width: 601px)': { 'max-width': '100%', 'margin-left': '0px', 'margin-bottom': '0px' }
+                                        },
                                         button: {
-                                            'background-color': '#2563eb !important',
-                                            ':hover': {
-                                                'background-color': '#1d4ed8 !important'
-                                            }
+                                            'font-weight': 'bold',
+                                            ':hover': { 'background-color': '#2056d1' },
+                                            'background-color': '#2460e8',
+                                            ':focus': { 'background-color': '#2056d1' },
+                                            'border-radius': '40px'
+                                        },
+                                        title: {
+                                            'font-family': 'Helvetica Neue, sans-serif',
+                                            'font-weight': 'bold',
+                                            'font-size': '26px',
+                                            color: '#4c4c4c'
+                                        },
+                                        price: {
+                                            'font-family': 'Helvetica Neue, sans-serif',
+                                            'font-weight': 'normal',
+                                            'font-size': '18px',
+                                            color: '#4c4c4c'
                                         }
-                                    }
+                                    },
+                                    text: { button: 'Add to cart' }
                                 }
                             }
                         });
@@ -214,54 +230,4 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
             section.classList.add('hidden');
         });
         
-        const sectionId = this.id.replace('NavBtn', 'Section');
-        document.getElementById(sectionId).classList.remove('hidden');
-        setTimeout(() => {
-            document.getElementById(sectionId).classList.add('visible');
-        }, 10);
-    });
-});
-
-// Hero section button navigation
-document.getElementById('shopKitsBtn').addEventListener('click', () => {
-    document.getElementById('kitsNavBtn').click();
-});
-
-document.getElementById('shopPartsBtn').addEventListener('click', () => {
-    document.getElementById('partsNavBtn').click();
-});
-
-document.getElementById('bookServicesBtn').addEventListener('click', () => {
-    document.getElementById('servicesNavBtn').click();
-});
-
-// Category tabs functionality
-document.querySelectorAll('.category-tab').forEach(tab => {
-    tab.addEventListener('click', function() {
-        document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
-        this.classList.add('active');
-        
-        const category = this.getAttribute('data-category');
-        
-        document.querySelectorAll('.product-card').forEach(card => {
-            if (category === 'all' || card.getAttribute('data-category') === category) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    });
-});
-
-// Intersection Observer for scroll animations
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.section').forEach(section => {
-    observer.observe(section);
-});
+        const sectionId = this.id.replace('NavBtn
