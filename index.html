@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HLY Bikes - Premium E-Bike Kits & Components</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <a href="#" class="brand">
+            <span class="logo-text">HLY Bikes</span>
+            <span class="lightning">⚡</span>
+        </a>
+        <nav>
+            <button id="homeNavBtn" class="nav-btn active">Home</button>
+            <button id="kitsNavBtn" class="nav-btn">Kits</button>
+            <button id="partsNavBtn" class="nav-btn">Parts</button>
+            <button id="servicesNavBtn" class="nav-btn">Services</button>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Home Section -->
+    <section id="homeSection" class="section visible">
+        <div class="hero-content">
+            <h1>Premium E-Bike Kits & Components</h1>
+            <p>Upgrade your ride with HLY Bikes' high-quality electric bike conversion kits and components. Experience superior performance, reliability, and value.</p>
+            
+            <div class="cta-buttons">
+                <button class="btn btn-primary" id="shopKitsBtn">
+                    <span>⚡</span> Shop Kits
+                </button>
+                <button class="btn btn-secondary" id="shopPartsBtn">
+                    <span>🔧</span> Browse Parts
+                </button>
+                <button class="btn btn-tertiary" id="bookServicesBtn">
+                    <span>🛠️</span> Book Services
+                </button>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🔋</span>
+                    <h3>High-Capacity Batteries</h3>
+                    <p>Premium lithium-ion batteries with up to 100km range and fast charging</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Powerful Motors</h3>
+                    <p>High-torque motors from 250W to 3000W for any terrain and riding style</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🛠️</span>
+                    <h3>Quality Components</h3>
+                    <p>Durable controllers, displays, and accessories for reliable performance</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🚴</span>
+                    <h3>Complete Kits</h3>
+                    <p>Everything you need for a successful e-bike conversion in one package</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kits Section -->
+    <section id="kitsSection" class="section">
+        <div class="section-header">
+            <h2>E-Bike Conversion Kits</h2>
+            <p>Explore and customize your perfect e-bike conversion kit.</p>
+        </div>
+
+        <!-- Kit Selection Grid -->
+        <div class="kit-grid" id="kitSelection">
+            <!-- 1500W Power Kit -->
+            <div class="kit-card active clickable-product" data-kit="1500w-power"
+                 data-product-id="kit-1500w-power"
+                 data-title="1500W Power Conversion Kit"
+                 data-category-display="Conversion Kit"
+                 data-price="£850"
+                 data-image="https://www.eco-ebike.com/wp-content/uploads/2020/04/BBSHD-Kit-1.jpg"
+                 data-description="Complete high-performance e-bike conversion kit featuring the powerful Bafang BBSHD 1500W mid-drive motor, 48V battery, advanced controller, LCD display, and all necessary installation hardware. This professional-grade kit transforms any standard bicycle into a powerful electric bike capable of tackling steep hills and long distances with ease."
+                 data-has-shopify="true"
+                 data-shopify-id="product-component-1755095138217">
+                <div class="kit-image">
+                    <img src="https://www.eco-ebike.com/wp-content/uploads/2020/04/BBSHD-Kit-1.jpg" alt="E-Bike Conversion Kit" />
+                    <div class="kit-badge">Most Popular</div>
+                </div>
+                <div class="kit-info">
+                    <h3>1500W Power Conversion Kit</h3>
+                    <p>Complete kit with high-torque motor, battery, and all necessary components.</p>
+                    <div id="product-component-1755095138217"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parts Section -->
+    <section id="partsSection" class="section">
+        <div class="section-header">
+            <h2>E-Bike Components</h2>
+            <p>High-quality individual components for building or upgrading your e-bike setup.</p>
+        </div>
+
+        <div class="category-tabs">
+            <button class="category-tab active" data-category="all">All Parts</button>
+            <button class="category-tab" data-category="batteries">Batteries</button>
+            <button class="category-tab" data-category="motors">Motors</button>
+            <button class="category-tab" data-category="controllers">Controllers</button>
+            <button class="category-tab" data-category="displays">Displays</button>
+            <button class="category-tab" data-category="accessories">Accessories</button>
+        </div>
+
+        <div class="product-grid" id="partsGrid">
+            <!-- 48V 18Ah Battery -->
+            <div class="product-card clickable-product" data-category="batteries" 
+                 data-product-id="battery-48v-18ah"
+                 data-title="48V 18Ah Lithium Battery"
+                 data-category-display="Battery"
+                 data-price="£210"
+                 data-image="https://www.eco-ebike.com/wp-content/uploads/2020/04/48V-18Ah-Battery.jpg"
+                 data-description="Premium lithium-ion battery pack delivering reliable power for your e-bike conversion. This high-capacity 18Ah battery provides excellent range of 20-40 miles depending on riding conditions, terrain, and assist level. Features built-in BMS (Battery Management System) for safe charging and operation."
+                 data-has-shopify="true"
+                 data-shopify-id="product-component-1755383100544">
+                <div class="product-image">
+                    <img src="https://www.eco-ebike.com/wp-content/uploads/2020/04/48V-18Ah-Battery.jpg" alt="48V 18Ah Battery" />
+                    <div class="product-badge">Best Seller</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Battery</div>
+                    <h3 class="product-title">48V 18Ah Lithium Battery</h3>
+                    <p class="product-description">High-capacity battery good for 20-40 miles</p>
+                    <div class="product-footer">
+                        <div class="product-price">£210</div>
+                        <div id='product-component-1755383100544'></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1500W Mid-Drive Motor -->
+            <div class="product-card clickable-product" data-category="motors"
+                 data-product-id="motor-1500w-mid"
+                 data-title="1500W Mid-Drive Motor"
+                 data-category-display="Motor"
+                 data-price="£380"
+                 data-image="https://www.eco-ebike.com/wp-content/uploads/2020/04/BBSHD-Motor-1.jpg"
+                 data-description="The Bafang BBSHD 1500W mid-drive motor is the ultimate choice for high-performance e-bike conversions. With its integrated torque sensor and impressive power output, this motor delivers smooth, natural-feeling assistance that responds to your pedaling effort. Perfect for off-road adventures, hill climbing, or heavy cargo hauling."
+                 data-has-shopify="false">
+                <div class="product-image">
+                    <img src="https://www.eco-ebike.com/wp-content/uploads/2020/04/BBSHD-Motor-1.jpg" alt="1500W Mid-Drive Motor" />
+                    <div class="product-badge">High Power</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Motor</div>
+                    <h3 class="product-title">1500W Mid-Drive Motor</h3>
+                    <p class="product-description">Bafang BBSHD motor with torque sensor, ideal for off-road or heavy-duty use.</p>
+                    <div class="product-footer">
+                        <div class="product-price">£380</div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 750W Rear Hub Motor -->
+            <div class="product-card clickable-product" data-category="motors"
+                 data-product-id="motor-750w-rear"
+                 data-title="750W Rear Hub Motor"
+                 data-category-display="Motor"
+                 data-price="£220"
+                 data-image="https://www.eco-ebike.com/wp-content/uploads/2020/04/750W-Rear-Motor.jpg"
+                 data-description="This 750W geared rear hub motor offers the perfect balance of power and efficiency for urban commuting and recreational riding. The internal gear reduction provides excellent torque for hill climbing while maintaining quiet operation. Easy to install and maintain, making it ideal for first-time e-bike builders."
+                 data-has-shopify="false">
+                <div class="product-image">
+                    <img src="https://www.eco-ebike.com/wp-content/uploads/2020/04/750W-Rear-Motor.jpg" alt="750W Rear Hub Motor" />
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Motor</div>
+                    <h3 class="product-title">750W Rear Hub Motor</h3>
+                    <p class="product-description">Reliable geared hub motor with quiet operation, perfect for urban commuting.</p>
+                    <div class="product-footer">
+                        <div class="product-price">£220</div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LCD Display -->
+            <div class="product-card clickable-product" data-category="displays"
+                 data-product-id="display-sw900"
+                 data-title="SW900 LCD Display"
+                 data-category-display="Display"
+                 data-price="£25"
+                 data-image="https://i.imgur.com/58X6fLw.png"
+                 data-description="The SW900 LCD display provides essential information at a glance, including speed, battery level, assist level, and trip data. Features a clear, easy-to-read display with multiple riding modes and settings. Weather-resistant construction ensures reliable operation in all conditions. Compatible with most e-bike systems using 5-pin connections."
+                 data-has-shopify="false">
+                <div class="product-image">
+                    <img src="https://i.imgur.com/58X6fLw.png" alt="SW900 LCD Display" />
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Display</div>
+                    <h3 class="product-title">SW900 display</h3>
+                    <p class="product-description">Basic 5 pin display with clear visibility and multiple settings.</p>
+                    <div class="product-footer">
+                        <div class="product-price">£25</div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicesSection" class="section">
+        <div class="section-header">
+            <h2>Professional Services</h2>
+            <p>Expert installation and maintenance services for your e-bike conversion.</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">🔧</span>
+                <h3>Kit Installation</h3>
+                <p>Professional installation of your e-bike conversion kit by certified technicians.</p>
+                <button class="btn btn-primary" style="margin-top: 1rem;">Book Service</button>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">⚡</span>
+                <h3>Battery Service</h3>
+                <p>Diagnostics, maintenance, and replacement of e-bike battery systems.</p>
+                <button class="btn btn-primary" style="margin-top: 1rem;">Book Service</button>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🚴</span>
+                <h3>Tune-Up Package</h3>
+                <p>Complete e-bike tune-up including motor, battery, and drivetrain check.</p>
+                <button class="btn btn-primary" style="margin-top: 1rem;">Book Service</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Product Detail Modal -->
+<div class="modal-overlay" id="productModal">
+    <div class="product-modal">
+        <button class="modal-close" id="modalClose">×</button>
+        <div class="modal-content">
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="Product Image" />
+            </div>
+            <div class="modal-info">
+                <div class="modal-category" id="modalCategory"></div>
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <div class="modal-price" id="modalPrice"></div>
+                <div class="modal-description" id="modalDescription"></div>
+                
+                <div class="product-features">
+                    <h4>Product Specifications</h4>
+                    <ul class="features-list" id="modalFeatures">
+                        <!-- Features will be populated dynamically -->
+                    </ul>
+                </div>
+                
+                <div class="modal-actions">
+                    <div class="modal-shopify-container" id="modalShopifyContainer">
+                        <!-- Shopify button will be inserted here if available -->
+                    </div>
+                    <button class="buy-now-btn" id="modalBuyNow" style="display: none;">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script>
+<script src="shopify-integration.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
