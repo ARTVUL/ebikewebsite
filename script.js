@@ -174,8 +174,11 @@ productModal.addEventListener('click', (e) => {
 
 // Add click handlers to all clickable products
 document.addEventListener('click', function(e) {
+    // Only trigger if clicked on the image area (not the button/info section)
+    const imageArea = e.target.closest('.product-image') || e.target.closest('.kit-image');
     const productCard = e.target.closest('.clickable-product');
-    if (productCard) {
+    
+    if (imageArea && productCard) {
         e.preventDefault();
         
         const productData = {
@@ -224,7 +227,7 @@ document.getElementById('shopKitsBtn').addEventListener('click', () => {
     document.getElementById('kitsNavBtn').click();
 });
 
-document.getElementById('shopPartsBtn').addEventListener('click', () => {
+document.getElementById('shopPartsBtn').addEventListener('click', () {
     document.getElementById('partsNavBtn').click();
 });
 
