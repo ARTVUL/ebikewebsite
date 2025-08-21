@@ -59,7 +59,7 @@ function openProductModal(productData) {
     modalImage.alt = productData.title;
     modalCategory.textContent = productData.categoryDisplay;
     modalTitle.textContent = productData.title;
-    modalPrice.textContent = productData.price;
+    modalPrice.textContent = `Price: ${productData.price} (before adding to cart)`;
     modalDescription.textContent = productData.description;
     
     // Populate specifications
