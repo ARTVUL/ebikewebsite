@@ -8,7 +8,6 @@ const modalPrice = document.getElementById('modalPrice');
 const modalDescription = document.getElementById('modalDescription');
 const modalFeatures = document.getElementById('modalFeatures');
 const modalShopifyContainer = document.getElementById('modalShopifyContainer');
-const modalBuyNow = document.getElementById('modalBuyNow');
 
 // Product specifications data
 const productSpecs = {
@@ -77,7 +76,6 @@ function openProductModal(productData) {
     
     // Handle Shopify button or styled Buy Now button
     modalShopifyContainer.innerHTML = '';
-    modalBuyNow.style.display = 'none';
     
     if (productData.hasShopify === 'true' && productData.shopifyId) {
         // Get the existing Shopify button container
@@ -154,8 +152,6 @@ function openProductModal(productData) {
                 });
             }
         }
-    } else {
-        modalBuyNow.style.display = 'inline-flex';
     }
     
     productModal.classList.add('visible');
